@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fffaeb;
+}
+
+#box {
+    position: absolute;
+    background-color: #ff8400;
+    color: #fff5d6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+    #box {
+        width: 9vw;
+        height: 8vw;
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    #box {
+        width: 12vw;
+        height: 12vw;
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #box {
+        width: 16vw;
+        height: 16vw;
+        font-size: 2.5vw;
+    }
+}
